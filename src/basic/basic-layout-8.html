@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Layout 8</title>
+    <title>Basic Layout 4 8. van basics</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 4fr;
+      grid-template-areas: "header header header" "nav main footer"  ;
+      gap: 10px;
+     }
+     header {
+      grid-area: header;
+     }
+     nav {
+      grid-area: nav;
+     }
+     main {
+      grid-area: main;
+     }
+     footer {
+      grid-area: footer;
+     }
+     /*manier van tweedejaars*/
     </style>
   </head>
-  <body id="basic-layout-8">
-    <header><h1>Basic Layout 8</h1></header>
+  <body id="basic-layout-4">
+    <header><h1>Basic Layout 4</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
